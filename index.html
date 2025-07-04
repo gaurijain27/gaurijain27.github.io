@@ -2,92 +2,174 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio Gauri Jain </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauri Jain – Portfolio</title>
+
+  <!-- 🌿 Elegant Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    /* 🖋 Global Styles */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f5f9f9;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.7;
     }
-    header {
-      background-color: #2b6777;
-      color: white;
-      padding: 40px 20px;
+
+    /* 📌 Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: white;
+      padding: 15px 0;
       text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
     }
-    h1 {
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #2b6777;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #1b4b5b;
+    }
+
+    /* 🎀 Header */
+    header {
+      background-color: #ffffff;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
       margin-bottom: 10px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
       color: #2b6777;
     }
+
+    header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    /* 📦 Section Layout */
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #2b6777;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
     ul {
-      list-style: square;
       padding-left: 20px;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #ddd;
-      font-size: 14px;
+
+    /* ✨ Fade-in Animation */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn ease 1.5s forwards;
     }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* 📬 Links */
     a {
       color: #2b6777;
       text-decoration: none;
     }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🧾 Footer */
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #999;
+      padding: 30px 20px;
+      border-top: 1px solid #eee;
+      margin-top: 40px;
+    }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Hello, I'm Gauri Jain</h1>
-    <p>🌟 A curious learner and recent senior secondary graduate 🌟</p>
+  <!-- 🧭 Navigation Bar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#journey">Learning</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- 🌟 Header -->
+  <header class="fade-in">
+    <h1>Gauri Jain</h1>
+    <p>Recent Senior Secondary Graduate | Curious Learner | Creative Explorer</p>
   </header>
 
-  <section id="about">
-    <h2>📘 About Me</h2>
-    <p>
-      I'm passionate about learning and exploring new things — from technology and web design to creative writing and visual arts. I'm currently diving into HTML, CSS, and Python, and I'm excited to document my journey here.
-    </p>
+  <!-- 📘 About Me -->
+  <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>Hello! I'm Gauri — a recent senior secondary graduate passionate about creativity, technology, and lifelong learning. I'm exploring web development, digital storytelling, and the art of communication through design and words.</p>
   </section>
 
-  <section id="skills">
-    <h2>🛠️ Skills & Tools</h2>
+  <!-- 🛠️ Skills -->
+  <section id="skills" class="fade-in">
+    <h2>Skills & Tools</h2>
     <ul>
-      <li>HTML & CSS (beginner)</li>
-      <li>Python (learning)</li>
-      <li>Presentation & Writing</li>
-      <li>Digital Art using Canva</li>
-      <li>Teamwork & Public Speaking</li>
+      <li>HTML & CSS – Beginner</li>
+      <li>Python – Learning basics</li>
+      <li>Digital Art & Canva</li>
+      <li>Public Speaking & Presentation</li>
+      <li>Curiosity and Critical Thinking</li>
     </ul>
   </section>
 
-  <section id="journey">
-    <h2>📚 My Learning Journey</h2>
-    <p>
-      I'm currently taking online courses in Python and Web Development. I'm also experimenting with small projects like making a to-do list app and interactive stories.
-      This section will grow as I keep learning!
-    </p>
+  <!-- 📚 Learning Journey -->
+  <section id="journey" class="fade-in">
+    <h2>My Learning Journey</h2>
+    <p>Currently, I'm learning web development and Python through online resources. I plan to start small creative projects soon — from interactive stories to mini apps and designs that reflect my ideas.</p>
   </section>
 
-  <section id="contact">
-    <h2>📬 Contact</h2>
-    <p>
-      Let's connect! You can email me at <strong>gaurijain.2720@gmail.com</strong><br>
-      Or find me on GitHub: <a href="https://github.com/gaurijain27" target="_blank">github.com/gaurijain27</a>
-    </p>
+    <!-- 📬 Contact -->
+  <section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+    <p>You can reach me at: <a href="mailto:gaurijain.2720@email.com">gaurijain.2720@email.com</a></p>
+    <p>GitHub: <a href="https://github.com/gaurijain27" target="_blank">github.com/gaurijain27</a></p>
   </section>
 
+  <!-- 🧾 Footer -->
   <footer>
-    &copy; 2025 Gauri Jain| Made with ❤️ and curiosity
+    &copy; 2025 Gauri Jain — Crafted with calm and curiosity.
   </footer>
 
 </body>
