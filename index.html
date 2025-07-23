@@ -111,6 +111,36 @@
       text-decoration: underline;
     }
 
+    .project-card {
+      background: #fff;
+      border: 1px solid #e1e1e1;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .project-card h3 {
+      color: #2b6777;
+      margin-bottom: 10px;
+    }
+
+    .project-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #2b6777;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .project-btn:hover {
+      background: #1b4b5b;
+    }
+
     footer {
       text-align: center;
       font-size: 14px;
@@ -129,6 +159,7 @@
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#journey">Learning</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -161,6 +192,23 @@
   <section id="journey" class="fade-in">
     <h2>My Learning Journey</h2>
     <p>Currently, I'm learning web development and Python through online resources. I plan to start small creative projects soon — from interactive stories to mini apps and designs that reflect my ideas.</p>
+  </section>
+
+  <!-- 🚀 Projects -->
+  <section id="projects" class="fade-in">
+    <h2>Projects</h2>
+    
+    <div class="project-card">
+      <h3>Career Suggester Quiz</h3>
+      <p>An interactive AI-powered quiz that suggests career paths based on your interests, skills, and values.</p>
+      <a href="https://gaurijain27.github.io/career-suggester/" target="_blank" class="project-btn">Visit Career Suggester</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Next Project Coming Soon</h3>
+      <p>I’m currently brainstorming my next creative and impactful project. Stay tuned for updates!</p>
+      <a href="#contact" class="project-btn">Follow for Updates</a>
+    </div>
   </section>
 
   <!-- 📬 Contact -->
